@@ -1,17 +1,17 @@
 :root {
-  /* Neon Depths — Core Palette */
-  --color-void: #050d1a; /* Near-black deep ocean */
-  --color-abyss: #0a1628; /* Dark navy base */
-  --color-deep: #0f2545; /* Elevated surface */
-  --color-mid: #1a3a6b; /* Mid-tone navy */
+  /* Solar Flare — Core Palette */
+  --color-void: #120814; /* Deep obsidian plum */
+  --color-abyss: #1a0c21; /* Dark night base */
+  --color-deep: #2a1236; /* Elevated plum surface */
+  --color-mid: #3d1b4e; /* Mid-tone violet base */
 
-  --color-neon-cyan: #00f5d4; /* Primary neon — electric teal */
-  --color-neon-blue: #00b4f5; /* Secondary neon — sky electric */
-  --color-neon-violet: #7b2fff; /* Accent — deep electric violet */
-  --color-neon-amber: #ffaa00; /* Warm punch accent */
+  --color-neon-cyan: #ff2a6d; /* Primary neon — electric hot pink */
+  --color-neon-blue: #ff7700; /* Secondary neon — solar flare orange */
+  --color-neon-violet: #ffb700; /* Accent — electric gold */
+  --color-neon-amber: #05d9e8; /* Bright cyan punch accent */
 
-  --color-text-primary: #e8f4fd; /* Near-white, slightly cool */
-  --color-text-secondary: #7eb8d4; /* Muted teal-blue */
+  --color-text-primary: #fff0f5; /* Crisp warm white */
+  --color-text-secondary: #d6a1cc; /* Muted soft lavender */
 }
 
 * {
@@ -22,13 +22,14 @@
 }
 
 body {
-  background-color: var(--color-mid); /* #0a1628 — deep ocean base */
+  background-color: var(--color-mid); /* #3d1b4e — mid-tone base */
   font-family: "Lato", sans-serif;
   min-height: 100vh;
   width: 100%;
   display: grid;
   place-items: center;
 }
+
 .container {
   width: 99.5%;
   max-width: 1200px;
@@ -37,16 +38,16 @@ body {
 
 .title {
   font-weight: 900;
-  background-color: var(--color-deep); /* #0f2545 — deep navy surface */
+  background-color: var(--color-deep); /* #2a1236 — elevated surface */
   padding: 0.25em 1em;
   border-radius: 1em;
   text-align: center;
   margin-inline: auto;
   width: 90%;
-  border: 6px solid var(--color-neon-cyan); /* #00f5d4 — electric teal border */
-  color: var(--color-text-primary); /* #e8f4fd — crisp readable text */
+  border: 6px solid var(--color-neon-cyan); /* #ff2a6d — electric pink border */
+  color: var(--color-text-primary); /* #fff0f5 — warm crisp text */
   text-shadow: 0 0 18px var(--color-neon-cyan); /* subtle neon glow */
-  box-shadow: 0 0 24px rgba(0, 245, 212, 0.25); /* ambient neon halo */
+  box-shadow: 0 0 24px rgba(255, 42, 109, 0.25); /* ambient neon halo */
 }
 
 .report {
@@ -58,7 +59,7 @@ body {
 
 .auto-date {
   min-width: 135px;
-  background-color: #381b51;
+  background-color: #57164d; /* deep magenta badge surface */
   padding: 0.25em 0.75em;
   border-radius: 0.5em;
   margin-left: 0.5em;
@@ -71,14 +72,14 @@ table {
 
 th,
 td {
-  border: 0.5px solid var(--color-neon-cyan); /* Add a 1px solid black border around cells */
-  padding: 8px 2px; /* Add some padding to cells */
-  text-align: center; /* Left-align cell contents */
+  border: 0.5px solid var(--color-neon-cyan); /* electric border around cells */
+  padding: 8px 2px;
+  text-align: center;
   width: 60px;
 }
 
 th {
-  background-color: #2d3142; /* Add a light gray background color to the header cells */
+  background-color: #381a42; /* dark plum table header */
 }
 
 input {
@@ -100,19 +101,19 @@ input[type="number"]::-webkit-outer-spin-button {
 .row-1,
 .row-3,
 .row-5 {
-  background-color: var(--color-deep); /* #0f2545 — darker row */
+  background-color: var(--color-deep); /* #2a1236 — darker row */
 }
 
 .row-2,
 .row-4,
 .row-6 {
-  background-color: var(--color-mid); /* #1a3a6b — lighter alternating row */
+  background-color: var(--color-mid); /* #3d1b4e — lighter alternating row */
 }
 
 .total-sales {
-  background-color: #fe7f2d;
+  background-color: var(--color-neon-blue); /* #ff7700 — bright solar orange total highlight */
 }
 
 .row-7 {
-  background-color: #666;
+  background-color: #4a2450; /* deep muted purple finish row */
 }
